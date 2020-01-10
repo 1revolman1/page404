@@ -67,7 +67,7 @@ main {
       align-items: center;
       border: 3px solid white;
       h1 {
-        font-family: "BodoniSvtyTwoSCITCTT";
+        font-family: "BodoniSevITC-Book";
         font-size: 64px;
         font-weight: normal;
         font-stretch: normal;
@@ -104,13 +104,14 @@ main {
     .img-info {
       p {
         margin: unset;
-        font-family: "BodoniSvtyTwoSCITCTT";
-        font-size: 25.6px;
-        font-weight: normal;
+        font-family: "Helvetica";
+        // font-size: 25.6px;
+        font-size: 16px;
+        font-weight: 300;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
-        letter-spacing: 0.46px;
+        letter-spacing: 0.57px;
         text-align: center;
         color: #484848;
         a {
@@ -124,7 +125,7 @@ main {
         margin: unset;
         margin-left: auto;
         p {
-          font-size: 32px;
+          font-size: 16px;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
@@ -133,8 +134,16 @@ main {
         }
       }
       @media screen and (min-width: 1024px) {
-        right: 8%;
+        right: 5%;
         p {
+          font-size: 29px;
+          text-align: unset;
+        }
+      }
+      @media screen and (min-width: 1100px) {
+        right: 5%;
+        p {
+          font-size: 32px;
           text-align: unset;
         }
       }
@@ -161,6 +170,15 @@ main {
           font-size: 21px;
         }
       }
+    }
+  }
+}
+@media screen and (max-height: 350px) {
+  main {
+    .content {
+      padding-top: 20px;
+      // padding-bottom: 90px;
+      padding-bottom: unset;
     }
   }
 }
